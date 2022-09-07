@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+.intro-container {
+  grid-area: v.$gridAreaMid;
+
+  .name {
+    font-weight: v.$heavy;
+    font-size: 2rem;
+    letter-spacing: v.$letterDefault;
+  }
+
+  .position {
+    font-weight: v.$bold;
+    font-size: 0.85rem;
+    color: v.$grey;
+  }
+}
