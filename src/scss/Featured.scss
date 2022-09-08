@@ -6,16 +6,26 @@
   display: flex;
   flex-direction: column;
 
-  h5 {
+  .featured-header {
     font-weight: v.$bold;
-    font-size: 22px;
+    font-size: 1.25rem;
     color: v.$black;
+
+    .featured-status {
+      font-weight: v.$heavy;
+      font-size: 0.85rem;
+      color: v.$grey;
+      letter-spacing: v.$letterDefault;
+    }
   }
 
-  article {
-    border: 1px solid orange;
+  .featured-item {
     margin: v.$sectionYmarginMin;
     border-radius: v.$border-radius;
-    height: 40vh;
+
+    .featured-img {
+      width: 100%;
+      border-radius: v.$border-radius;
+    }
   }
 }
