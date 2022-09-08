@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+.featured-container {
+  grid-column-start: v.$gridAreaMid;
+  margin: v.$sectionYmarginMin;
+  display: flex;
+  flex-direction: column;
+
+  .featured-header {
+    font-weight: v.$bold;
+    font-size: 1.25rem;
+    color: v.$black;
+
+    .featured-status {
+      font-weight: v.$heavy;
+      font-size: 0.85rem;
+      color: v.$grey;
+      letter-spacing: v.$letterDefault;
+    }
+  }
+
+  .featured-item {
+    margin: v.$sectionYmarginMin;
+    border-radius: v.$border-radius;
+
+    .featured-img {
+      width: 100%;
+      border-radius: v.$border-radius;
+    }
+  }
+}
