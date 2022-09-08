@@ -1,7 +1,8 @@
 @use 'variables' as v;
 
 .intro-container {
-  grid-area: v.$gridAreaMid;
+  // grid-area: v.$gridAreaMid;
+  margin: v.$sectionYmargin;
 
   .name {
     font-weight: v.$heavy;

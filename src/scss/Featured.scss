@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.featured-container {
+  grid-column-start: v.$gridAreaMid;
+  margin: v.$sectionYmargin;
+
+  border: 1px solid lightblue;
+  height: 40vh;
+}

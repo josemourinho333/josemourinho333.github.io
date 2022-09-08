@@ -2,8 +2,11 @@
 $bg-white: #fff;
 
 // grid
-$mainGrid: repeat(3, 1fr);
-$gridAreaMid: auto / 2 / auto / 3;
+$mainGrid: 1fr;
+$gridAreaMid: 2 / 3;
+
+// margin
+$sectionYmargin: 2rem 0;
 
 // font weight
 $heavy: 900;
