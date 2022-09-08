@@ -2,8 +2,20 @@
 
 .featured-container {
   grid-column-start: v.$gridAreaMid;
-  margin: v.$sectionYmargin;
+  margin: v.$sectionYmarginMin;
+  display: flex;
+  flex-direction: column;
 
-  border: 1px solid lightblue;
-  height: 40vh;
+  h5 {
+    font-weight: v.$bold;
+    font-size: 22px;
+    color: v.$black;
+  }
+
+  article {
+    border: 1px solid orange;
+    margin: v.$sectionYmarginMin;
+    border-radius: v.$border-radius;
+    height: 40vh;
+  }
 }

@@ -1,5 +1,6 @@
 // bg
 $bg-white: #fff;
+$bg-grey: #757575;
 
 // grid
 $mainGrid: 1fr;
@@ -7,6 +8,7 @@ $gridAreaMid: 2 / 3;
 
 // margin
 $sectionYmargin: 2rem 0;
+$sectionYmarginMin: 1rem 0;
 
 // font weight
 $heavy: 900;
@@ -23,3 +25,6 @@ $grey: #757575;
 // letter spacing height
 $letterDefault: 0.10rem;
 $lineDefault: 1rem;
+
+// border
+$border-radius: 0.75rem;
