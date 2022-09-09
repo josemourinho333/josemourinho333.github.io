@@ -1,14 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const Featured = () => {
-  // set this to true if latest is still in progress
-  // const [inProgress, setInProgress] = useState(false);
-
-  // const inProgressBadge = inProgress
-  //   ? <span className='featured-status'> - In progress </span>
-  //   : <span className='featured-status'> - Finished </span>
-
-
   return (
     <section className="featured-container">
       <h5 className="featured-header">
