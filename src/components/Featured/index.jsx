@@ -4,7 +4,7 @@ const Featured = () => {
   return (
     <section className="featured-container">
       <h5 className="featured-header">
-        Latest
+        Projects
       </h5>
       <article className="featured-item">
         <div className="featured-content">

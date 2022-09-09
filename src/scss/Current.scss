@@ -1,0 +1,15 @@
+@import './variables';
+
+.current-container {
+  @include section-flex(column);
+
+  .current-position, .current-location {
+    @include section-header(0.80rem);
+    font-weight: 300;
+
+    span {
+      font-weight: 700;
+      color:#006ae3;
+    }
+  }
+}
