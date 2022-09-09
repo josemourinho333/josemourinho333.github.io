@@ -1,27 +1,19 @@
-@use 'variables' as v;
+@import './variables';
 
 .intro-container {
-  // grid-area: v.$gridAreaMid;
-  margin: v.$sectionYmargin;
+  @include section-grid-area();
 
   .name {
-    font-weight: v.$bold;
-    font-size: 2rem;
-    letter-spacing: v.$letterDefault;
+    @include section-header(2rem);
   }
 
   .position {
-    font-weight: v.$bold;
-    font-size: 0.85rem;
-    color: v.$grey;
+    @include section-text();
   }
 
   .profile-img-container {
-    background-color: #e5e7eb;
-    margin: v.$sectionYmarginMin;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    @include circle-thumbnail();
+
     background-size: cover;
     background-image: url('https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/profile.png?raw=true');
     background-position: 50% 80%;

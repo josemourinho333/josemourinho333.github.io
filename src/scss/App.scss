@@ -1,7 +1,5 @@
-@use 'variables' as v;
+@import './variables';
 
 .App {
-  background-color: v.$bg-white;
-  display: grid;
-  grid-template-columns: v.$mainGrid;
+  @include app-grid();
 }
