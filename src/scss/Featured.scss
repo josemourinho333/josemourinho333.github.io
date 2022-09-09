@@ -15,6 +15,44 @@
   .featured-item {
     @include img-card-container();
 
+    .featured-content {
+      @include img-card-content();
+
+      .content-title {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .content-stack {
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #757575;
+        margin-top: 0.25rem;
+      }
+
+      .content-desc {
+        font-weight: 300;
+        font-size: 1rem;
+        margin: 1rem 0;
+        line-height: 1.25rem;
+        letter-spacing: 0.1rem;
+      }
+
+      .content-links {
+        button {
+          background-color: black;
+          border: 1px solid white;
+          padding: 0 1rem;
+          margin-right: 1rem;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+
     .featured-img {
       @include img-card();
     }
