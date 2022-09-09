@@ -19,15 +19,17 @@
       @include img-card-content();
 
       .content-title {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 1.5rem;
       }
 
       .content-stack {
         font-weight: 700;
         font-size: 0.85rem;
-        color: #757575;
+        color: #fff;
         margin-top: 0.25rem;
+        letter-spacing: 0.10rem;
+
       }
 
       .content-desc {
@@ -35,7 +37,6 @@
         font-size: 1rem;
         margin: 1rem 0;
         line-height: 1.25rem;
-        letter-spacing: 0.1rem;
       }
 
       .content-links {
@@ -50,6 +51,7 @@
             color: white;
           }
         }
+        margin-bottom: 2rem;
       }
     }
 
