@@ -7,7 +7,8 @@
     @include section-header(0.80rem);
     font-weight: 300;
 
-    span {
+    span, a {
+      text-decoration: none;
       font-weight: 700;
       color:#006ae3;
     }

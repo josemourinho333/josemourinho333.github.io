@@ -2,7 +2,7 @@
 
 .about-container {
   @include section-grid-area();
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   .about-header {
     @include section-header(1.25rem);
   }
@@ -10,7 +10,7 @@
   .about-item {
     .content-desc {
       font-weight: 300;
-      font-size: 1rem;
+      font-size: 0.85rem;
       margin: 1rem 0;
       line-height: 1.25rem;
     }

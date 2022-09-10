@@ -1,22 +1,30 @@
 import React from 'react';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
-const Featured = () => {
+
+const Featured = (props) => {
   return (
     <section className="featured-container">
       <h5 className="featured-header">
-        Projects
+        {props.header ? 'Projects' : ''}
       </h5>
       <article className="featured-item">
         <div className="featured-content">
-          <h5 className="content-title">'She's a 10 but ...' Generator</h5>
-          <p className="content-stack">Ruby on Rails, ReactJS, REST</p>
-          <p className="content-desc">Full stack "she's a 10 but ..." random generator. <br/>Is it trendy? Yes. Is it useless? Completely. <br/>Is it hilarious though? Maybe.</p>
+          <p className="content-stack">{props.stack}</p>
+          <h5 className="content-title">{props.name}</h5>
+          <p className="content-desc">
+            {props.desc}
+          </p>
           <div className="content-links">
-            <button className="content-site"><a href="#" target="_blank" rel="noopener noreferrer">Website</a></button>
-            <button className="content-github"><a href="#" target="_blank" rel="noopener noreferrer">Github</a></button>
+            <button className="content-github"><a href={props.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a></button>
+            {
+              !props.website
+                ? <></>
+                : <button className="content-site"><a href={props.website} target="_blank" rel="noopener noreferrer"><FaLink /></a></button>
+            }
           </div>
         </div>
-        <img src="https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true" alt="featured-card" className="featured-img" />
+        <img src={props.img} alt="featured-card" className="featured-img" />
       </article>
     </section>
   )
