@@ -116,3 +116,29 @@
     grid-area: 3 / 1 / 4 / 3;
   }
 }
+
+// CV info layout
+@mixin cv-layout {
+  font-weight: 300;
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.25rem;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 30% 70%;
+
+    .timeline {
+      font-weight: 700;
+      color: #757575;
+    }
+
+    .info {
+      .info-title {
+        font-weight: 700;
+      }
+
+      .info-content {
+        color: #757575;
+      }
+    }
+}

@@ -3,7 +3,6 @@
 .featured-container {
   @include section-grid-area();
   @include section-flex(column);
-  margin-bottom: 0;
   height: 500px;
 
   &:nth-of-type(n + 2) {
