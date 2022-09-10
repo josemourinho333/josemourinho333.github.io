@@ -4,7 +4,7 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 const Featured = (props) => {
   return (
-    <section className="featured-container">
+    <section className="featured-container" id="projects">
       <h5 className="featured-header">
         {props.header ? 'Projects' : ''}
       </h5>
