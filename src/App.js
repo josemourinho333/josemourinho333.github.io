@@ -7,6 +7,7 @@ import Skills from "./components/Skills.jsx";
 import Nav from "./components/Nav/index.jsx";
 import Education from "./components/Education.jsx";
 import Work from "./components/Work.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
         <Education />
         <Work />
       </div>
+      <Footer />
     </>
   );
 }
