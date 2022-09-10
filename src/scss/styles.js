@@ -5,3 +5,5 @@ import './About.scss';
 import './Current.scss';
 import './Skills.scss';
 import './Nav.scss';
+import './Education.scss';
+import './Work.scss';
