@@ -9,3 +9,4 @@ import './Education.scss';
 import './Work.scss';
 import './Socials.scss';
 import './Footer.scss';
+import './Contact.scss';
