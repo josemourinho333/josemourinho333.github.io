@@ -8,12 +8,14 @@ import Nav from "./components/Nav/index.jsx";
 import Education from "./components/Education.jsx";
 import Work from "./components/Work.jsx";
 import Footer from "./components/Footer.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
     <>
       <Nav />
       <div className="App">
+        <Contact />
         <Intro />
         <Current />
         <About/>
