@@ -4,7 +4,7 @@ import { TbBrandMeta } from 'react-icons/tb';
 
 const Skills = () => {
   return (
-    <section className="skills-container">
+    <section className="skills-container" id="skills">
       <h5 className="skills-header">Skills</h5>
       <article className="skills-content">
         <div className="skill-header">Frontend</div>
