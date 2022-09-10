@@ -7,3 +7,5 @@ import './Skills.scss';
 import './Nav.scss';
 import './Education.scss';
 import './Work.scss';
+import './Socials.scss';
+import './Footer.scss';

@@ -1,0 +1,12 @@
+@import './variables';
+
+.socials-container {
+  margin-top: 2rem;
+  display: flex;
+
+  & > * {
+    margin-right: 0.5rem;
+    font-size: 1.15rem;
+    color: #000;
+  }
+}
