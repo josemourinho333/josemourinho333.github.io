@@ -3,6 +3,7 @@ import Intro from './components/Intro';
 import Current from "./components/Current.jsx";
 import Featured from "./components/Featured/index";
 import About from './components/About';
+import Skills from "./components/Skills.jsx";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         github='https://github.com/josemourinho333/diary-notes'
         website=''
       />
+      <Skills />
     </div>
   );
 }
