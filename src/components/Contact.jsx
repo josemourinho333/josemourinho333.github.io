@@ -1,22 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FiMail } from 'react-icons/fi';
 import { RiCloseLine } from 'react-icons/ri';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState({
+    reply_to: '',
+    subject: '',
+    message: ''
+  });
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log('email', email);
+    emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_PUBLIC_KEY}`)
+      .then((result) => {
+        form.current.value = '';
+        setOpen(false);
+      })
+  };
 
   return (
     <> 
       {
         !open 
           ? <></>
-          : <form className='contact-form'>
+          : <form className='contact-form' ref={form} onSubmit={sendEmail}>
               <div className="contact-header">
                 <div className="contact-title">Send me a message </div>
                 <button className='close-form' onClick={() => setOpen(false)}><RiCloseLine /></button>
               </div>
-              <input type="text" placeholder='Email'/>
-              <input type="text" placeholder='Subject'/>
+              <input type="text" name='reply_to' placeholder='Email' />
+              <input type="text" name='subject' placeholder='Subject'/>
               <textarea name="message" placeholder='Message' />
               <button type='submit'>Send</button>
             </form>
