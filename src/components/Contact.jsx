@@ -6,17 +6,10 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
-  const [email, setEmail] = useState({
-    reply_to: '',
-    subject: '',
-    message: ''
-  });
-
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log('email', email);
     emailjs.sendForm(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, form.current, `${process.env.REACT_APP_PUBLIC_KEY}`)
       .then((result) => {
         form.current.value = '';
@@ -36,7 +29,7 @@ const Contact = () => {
               </div>
               <input type="text" name='reply_to' placeholder='Email' />
               <input type="text" name='subject' placeholder='Subject'/>
-              <textarea name="message" placeholder='Message' />
+              <textarea name="message" placeholder='Need a copy of my resume and/or want to chat?' />
               <button type='submit'>Send</button>
             </form>
       }
