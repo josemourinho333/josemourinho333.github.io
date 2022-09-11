@@ -4,7 +4,7 @@ import Socials from "./Socials.jsx";
 const Current = () => {
   return (
     <section className="current-container">
-      <h5 className="current-position">Currently a volunteer web admin <a href="#">@thehappyherd</a></h5>
+      <h5 className="current-position">Currently a volunteer web admin <a href="https://happyherd.org/">@thehappyherd</a></h5>
       <h5 className="current-location">Located in <span>Fraser Valley, BC</span> 🇨🇦</h5>
       <Socials />
     </section>
