@@ -14,7 +14,7 @@
   width: 400px;
   z-index: 150;
   border-radius: 0.75rem;
-  border: 1px solid #757575;
+  border: 1px solid #000;
   box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 20%);
 
   
@@ -26,13 +26,13 @@
 
   input {
     border-radius: 0.75rem;
-    border: 1px solid #757575;
+    border: 1px solid #000;
     padding: 0 1rem;
   }
 
   textarea {
     border-radius: 0.75rem;
-    border: 1px solid #757575;
+    border: 1px solid #000;
     padding: 1rem;
     resize: none;
   }
@@ -47,12 +47,11 @@
 
   button {
     border-radius: 0.75rem;
-    border: 1px solid #757575;
     width: 20%;
     justify-self: end;
     background-color: #fff;
-    color: #757575;
-    border: 1px solid #757575;
+    color: #000;
+    border: 1px solid #000;
   }
 }
 
@@ -65,10 +64,10 @@
   position: fixed;
   top: 800px;
   right: 125px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 30%);
 
   & > * {
-    padding: 0.70rem;
+    padding: 0.60rem;
   }
 }

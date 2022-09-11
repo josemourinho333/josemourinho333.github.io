@@ -44,11 +44,13 @@
         margin: 1rem 0 0 0;
         line-height: 1.25rem;
         white-space: pre-line;
-        visibility: hidden;
+        opacity: 0;
+        height: 0;
       }
 
       .content-links {
-        visibility: hidden;
+        height: 0;
+        opacity: 0;
 
         button {
           background-color: transparent;
