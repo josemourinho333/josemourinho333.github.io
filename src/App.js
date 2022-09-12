@@ -24,9 +24,7 @@ function App() {
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true'
           name="'She's a 10 but ...' Generator"
           stack='Ruby on Rails, ReactJS, REST'
-          desc={`Full stack "she's a 10 but ..." random generator. 
-          Is it trendy? Yes. Is it useless? Completely. 
-          Is it hilarious though? Maybe.`}
+          desc={`Full stack "she's a 10 but ..." random generator.`}
           github='https://github.com/josemourinho333/refactored-garbanzo'
           website='https://peaceful-bastion-57486.herokuapp.com/'
         />

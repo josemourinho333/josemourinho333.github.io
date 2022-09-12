@@ -5,4 +5,9 @@
   width: 600px;
   margin: 0 auto;
   position: relative;
+
+  @media only screen and (min-width: 0px) and (max-width: 700px) {
+    width: 90%;
+    margin: auto;
+  }
 }
