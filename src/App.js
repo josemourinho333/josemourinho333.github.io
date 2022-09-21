@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="App">
+      <div className="App" id="app">
         <Contact />
         <Intro />
         <Current />

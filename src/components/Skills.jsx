@@ -28,7 +28,7 @@ const Skills = () => {
           <SiPostgresql />
           <SiMysql />
           <SiMongodb />
-          <SiGo />
+          {/* <SiGo /> */}
         </div>
 
         <div className="skill-header">Testing</div>
