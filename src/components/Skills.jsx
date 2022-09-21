@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiHeroku, SiAdobeillustrator, SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiFigma, SiGimp, SiCanva, SiGoogleanalytics, SiGoogleads  } from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiHeroku, SiAdobeillustrator, SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiFigma, SiGimp, SiCanva, SiGoogleanalytics, SiGoogleads, SiTypescript, SiGo, SiMongodb, SiDocker  } from 'react-icons/si';
 import { TbBrandMeta } from 'react-icons/tb';
 
 const Skills = () => {
@@ -12,6 +12,7 @@ const Skills = () => {
           <SiReact />
           <SiRuby />
           <SiJavascript />
+          <SiTypescript />
           <SiJquery />
           <SiSass />
           <SiTailwindcss />
@@ -26,6 +27,8 @@ const Skills = () => {
           <SiRubyonrails />
           <SiPostgresql />
           <SiMysql />
+          <SiMongodb />
+          <SiGo />
         </div>
 
         <div className="skill-header">Testing</div>
@@ -45,6 +48,7 @@ const Skills = () => {
           <SiNpm />
           <SiNetlify />
           <SiHeroku />
+          <SiDocker />
         </div>
 
         <div className="skill-header">Design | Marketing</div>

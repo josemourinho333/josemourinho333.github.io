@@ -6,6 +6,7 @@
   .current-position, .current-location {
     @include section-header(0.80rem);
     font-weight: 300;
+    margin: 0.15rem 0;
 
     span, a {
       text-decoration: none;

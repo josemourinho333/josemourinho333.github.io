@@ -8,7 +8,7 @@ const Nav = () => {
       <div className="nav-menu">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#education">CV</a>
+        <a href="https://resume.creddle.io/resume/6k8iwdwj8sr" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </section>
   )

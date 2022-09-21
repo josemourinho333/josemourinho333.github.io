@@ -4,6 +4,7 @@
   @include section-grid-area();
   @include section-flex(column);
   height: 500px;
+  scroll-behavior: inherit;
 
   &:nth-of-type(n + 2) {
     margin-top: 0;
