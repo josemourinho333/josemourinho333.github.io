@@ -20,6 +20,16 @@ function App() {
         <Current />
         <About/>
         <Featured 
+          current={true}
+          header={false}
+          img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/scraper-card.png?raw=true'
+          name='Web Scraper'
+          stack='TypeScript, ReactJS, NodeJS, Express, Postgres, Cheerio, Tailwind, DaisyUI, Webpack'
+          desc={'Scraping Craigslist for Macbooks to resell. Would email me if price analysis is good for resale value.'}
+          github='https://github.com/josemourinho333/scraps'
+          website=''
+        />
+        <Featured 
           header={true}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true'
           name="'She's a 10 but ...' Generator"

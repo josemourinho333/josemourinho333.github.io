@@ -6,7 +6,11 @@ const Featured = (props) => {
   return (
     <section className="featured-container" id="projects">
       <h5 className="featured-header">
-        {props.header ? 'Projects' : ''}
+        {props.header ? 'Projects' 
+          : props.current
+          ? 'Currently working on'
+          : ''
+        }
       </h5>
       <article className="featured-item">
         <div className="featured-content">
