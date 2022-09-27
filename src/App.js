@@ -20,17 +20,17 @@ function App() {
         <Current />
         <About/>
         <Featured 
-          current={true}
-          header={false}
+          current={false}
+          header={true}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/scraper-card.png?raw=true'
           name='Web Scraper'
-          stack='TypeScript, ReactJS, NodeJS, Express, Postgres, Cheerio, Tailwind, DaisyUI, Webpack'
-          desc={'Scraping Craigslist for Macbooks to resell. Would email me if price analysis is good for resale value.'}
+          stack='TypeScript, ReactJS, NodeJS, Express, Postgres, Crontab, Cheerio, NodeMailer, EJS, Tailwind, DaisyUI, Webpack'
+          desc={'Scraping Craigslist for Macbooks to resell. Cronjob set up to scrape every 30 mins and email me any good deals.'}
           github='https://github.com/josemourinho333/scraps'
           website=''
         />
         <Featured 
-          header={true}
+          header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true'
           name="'She's a 10 but ...' Generator"
           stack='Ruby on Rails, ReactJS, REST'
