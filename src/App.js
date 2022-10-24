@@ -29,7 +29,7 @@ function App() {
           github='https://github.com/josemourinho333/scraps'
           website=''
         />
-        <Featured 
+        {/* <Featured 
           header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true'
           name="'She's a 10 but ...' Generator"
@@ -37,7 +37,7 @@ function App() {
           desc={`Full stack "she's a 10 but ..." random generator.`}
           github='https://github.com/josemourinho333/refactored-garbanzo'
           website='https://peaceful-bastion-57486.herokuapp.com/'
-        />
+        /> */}
         <Featured 
           header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/keen-card.png?raw=true'
