@@ -57,18 +57,18 @@
   }
 
   @media only screen and (min-width: 1025px) {
-    top: 50%;
+    top: 40%;
     right: 3%;
   }
 
   @media only screen and (min-width: 501px) and (max-width: 1024px) {
-    top: 50%;
+    bottom: 0;
     right: 3%;
   }
 
   @media only screen and (min-width: 0px) and (max-width: 500px) {
-    top: 50%;
-    right: 3%;
+    top: 35%;
+    right: 5%;
     width: 80%;
   }
 }
@@ -81,7 +81,7 @@
   border: none;
   position: fixed;
   top: 85%;
-  right: 3%;
+  right: 5%;
   font-size: 2rem;
   box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 30%);
   z-index: 149;
@@ -92,7 +92,7 @@
 
   @media only screen and (min-width: 0px) and (max-width: 320px) {
     top: 85%;
-    right: 3%;
+    right: 5%;
   }
 
 }
