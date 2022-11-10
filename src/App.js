@@ -15,7 +15,7 @@ function App() {
     <>
       <Nav />
       <div className="App" id="app">
-        <Contact />
+        {/* <Contact /> */}
         <Intro />
         <Current />
         <About/>
