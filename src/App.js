@@ -22,6 +22,16 @@ function App() {
         <Featured 
           current={false}
           header={true}
+          img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/tarot-me.png?raw=true'
+          name='Web Scraper'
+          stack='NextJS, ReactJS, NodeJS, Express, Postgres, Tailwind, DasiyUI, Axios'
+          desc={'The most popular, free and best looking fulls tack tarot reading and learning website.'}
+          github='https://github.com/josemourinho333/tarot-me'
+          website='https://637ad77fcac7300008cffac7--scintillating-scone-d0792d.netlify.app/'
+        />
+        <Featured 
+          current={false}
+          header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/scraper-card.png?raw=true'
           name='Web Scraper'
           stack='TypeScript, ReactJS, NodeJS, Express, Postgres, Crontab, Cheerio, NodeMailer, EJS, Tailwind, DaisyUI, Webpack'
@@ -30,24 +40,14 @@ function App() {
           website=''
         />
         <Featured 
-          current={false}
-          header={true}
-          img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/scraper-card.png?raw=true'
-          name='Web Scraper'
-          stack='TypeScript, ReactJS, NodeJS, Express, Postgres, Crontab, Cheerio, NodeMailer, EJS, Tailwind, DaisyUI, Webpack'
-          desc={'Scraping Craigslist for Macbooks to resell. Cronjob set up to scrape every 30 mins and email me any good deals.'}
-          github='https://github.com/josemourinho333/scraps'
-          website=''
-        />
-        {/* <Featured 
           header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/section-featured/docs/shesa10-card.png?raw=true'
-          name="'She's a 10 but ...' Generator"
+          name="'... is a 10 but ...' Generator"
           stack='Ruby on Rails, ReactJS, REST'
-          desc={`Full stack "she's a 10 but ..." random generator.`}
+          desc={`Full stack "... is a 10 but ..." random generator.`}
           github='https://github.com/josemourinho333/refactored-garbanzo'
           website='https://peaceful-bastion-57486.herokuapp.com/'
-        /> */}
+        />
         <Featured 
           header={false}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/keen-card.png?raw=true'
