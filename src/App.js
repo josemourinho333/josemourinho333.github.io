@@ -23,11 +23,11 @@ function App() {
           current={false}
           header={true}
           img='https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/tarot-me.png?raw=true'
-          name='Web Scraper'
+          name='Tarot Card Reader & Learn'
           stack='NextJS, ReactJS, NodeJS, Express, Postgres, Tailwind, DasiyUI, Axios'
           desc={'The most popular, free and best looking fulls tack tarot reading and learning website.'}
           github='https://github.com/josemourinho333/tarot-me'
-          website='https://637ad77fcac7300008cffac7--scintillating-scone-d0792d.netlify.app/'
+          website='https://637d2361d1c07a00088c3ef1--scintillating-scone-d0792d.netlify.app/'
         />
         <Featured 
           current={false}
