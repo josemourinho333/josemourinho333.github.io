@@ -2,7 +2,7 @@ import React from 'react';
 
 const Work = () => {
   return (
-    <section className="work-container">
+    <section className="!hidden lg:!flex lg:!flex-col work-container">
       <h5 className="work-header">Work Experience</h5>
       <article className="work-content">
         <div className="timeline">
@@ -10,7 +10,7 @@ const Work = () => {
           <div className="month">May - Current</div>
         </div>
         <div className="info">
-          <div className="info-title">Volunteer Web Administrator</div>
+          <div className="info-title">Web Developer/Administrator (contract)</div>
           <div className="info-content">The Happy Herd Animal Sanctuary</div>
         </div>
         <div className="timeline">

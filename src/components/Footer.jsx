@@ -3,7 +3,7 @@ import Socials from './Socials';
 
 const Footer = () => {
   return (
-    <section className="footer-container">
+    <section className="!hidden lg:!flex lg:!flex-col footer-container">
       <Socials />
     </section>
   )

@@ -2,7 +2,7 @@
 
 .intro-container {
   @include section-grid-area();
-  margin-top: 8rem;
+  margin-top: 1rem;
 
   .name {
     @include section-header(2rem);

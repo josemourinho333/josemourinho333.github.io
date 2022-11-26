@@ -5,13 +5,13 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 const Featured = (props) => {
   return (
     <section className="featured-container" id="projects">
-      <h5 className="featured-header">
+      {/* <h5 className="featured-header">
         {props.header ? 'Projects' 
           : props.current
           ? 'Currently working on'
           : ''
         }
-      </h5>
+      </h5> */}
       <article className="featured-item">
         <div className="featured-content">
           <p className="content-stack">{props.stack}</p>

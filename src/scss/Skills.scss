@@ -3,7 +3,7 @@
 .skills-container {
   @include section-grid-area();
   @include section-flex(column);
-  margin-top: 3rem;
+  margin-top:  1rem;
 
   .skills-header {
     @include section-header(1.25rem);
@@ -23,10 +23,10 @@
     }
 
     .skill-list {
-      margin-top: 1.5rem;
+      flex-wrap: wrap;
       & > * {
         font-size: 2rem;
-        margin: 0 1rem 0 0;
+        margin: 1rem 1rem 0 0;
       }
     }
   }
