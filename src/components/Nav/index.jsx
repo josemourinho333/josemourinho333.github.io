@@ -25,10 +25,10 @@ const Nav = () => {
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 text-sm">
-          <li><a>About</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Skills</a></li>
-          <li><a>Contact</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
       <div className="navbar-end p-[1rem]">
