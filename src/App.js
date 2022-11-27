@@ -1,4 +1,3 @@
-import "./scss/styles.js";
 import "./index.css";
 import Intro from './components/Intro';
 import Current from "./components/Current.jsx";
@@ -13,6 +12,8 @@ import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
 import UserInput from "./components/Input/index.jsx";
 import { Routes, Route } from 'react-router-dom';
+import Hero from "./components/Hero.jsx";
+import Latest from "./components/Latest";
 
 function App() {
   return (
@@ -24,27 +25,29 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Intro homepage={true}/>
-              <UserInput homepage={true}/>
+              <Hero />
+              <Latest />
+              {/* <Intro homepage={true}/>
+              <UserInput homepage={true}/> */}
             </>
           }/>
         
         <Route path="/about" element={
           <>
-            <About/>
+            {/* <About/>
             <Skills />
             <Education />
             <Work />
             <Intro />
-            <UserInput />
+            <UserInput /> */}
           </>
         }/>
 
         <Route path="/projects" element={
           <>
-          <ProjectList />
+          {/* <ProjectList />
           <Intro />
-          <UserInput />
+          <UserInput /> */}
           </>
         }/>
        
