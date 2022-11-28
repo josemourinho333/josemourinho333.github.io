@@ -7,6 +7,9 @@ const Latest = () => {
 
   return (
     <div className="min-h-screen bg-neutral-content text-neutral flex flex-col justify-center items-center">
+      <div className="badge badge-error rounded-full">
+        new
+      </div>
       <h1 className="bg-neutral-content text-center text-3xl md:text-4xl font-extrabold">
         Tarot Card Reader & Learning
       </h1>

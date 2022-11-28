@@ -16,9 +16,11 @@ import Hero from "./components/Hero.jsx";
 import Latest from "./components/Latest";
 import HomeIntro from "./components/HomeIntro";
 import HomeProjectList from "./components/HomeProjectList";
-import HomeContact from "./components/HomeContact";
+import HomeBackground from "./components/HomeBackground";
+import projectData from "./data";
 
 function App() {
+  console.log('datatata', projectData);
   return (
     <>
       <Nav />
@@ -32,7 +34,7 @@ function App() {
               <Latest />
               <HomeIntro />
               <HomeProjectList />
-              <HomeContact />
+              <HomeBackground />
               {/* <Intro homepage={true}/>
               <UserInput homepage={true}/> */}
             </>

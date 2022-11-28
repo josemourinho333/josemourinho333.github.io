@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Work from './Work';
 
-const HomeContact = () => {
+const HomeBackground = () => {
   const [activeTab, setActiveTab] = useState("Experience");
 
   const tabClickHandler = (tabName) => {
@@ -15,7 +15,7 @@ const HomeContact = () => {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-gray-200">
       <div className="hero-content w-4/5 flex-col lg:flex-row bg-inherit gap-10">
         <div className="basis-1/2 bg-inherit text-center lg:text-left pt-10 lg:pt-0">
           <h1 className="text-3xl md:text-4xl font-extrabold text-neutral bg-inherit">My journey so far</h1>
@@ -42,4 +42,4 @@ const HomeContact = () => {
   )
 }
 
-export default HomeContact
+export default HomeBackground;
