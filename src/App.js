@@ -18,51 +18,53 @@ import HomeIntro from "./components/HomeIntro";
 import HomeProjectList from "./components/HomeProjectList";
 import HomeBackground from "./components/HomeBackground";
 import projectData from "./data";
+import { ProjectProvider } from "./ProjectContext";
 
 function App() {
-  console.log('datatata', projectData);
   return (
-    <>
-      <Nav />
-      <div className="App" id="app">
-        {/* <Contact /> */}
-        {/* <Current /> */}
-        <Routes>
-          <Route path="/" element={
+    <ProjectProvider>
+      <>
+        <Nav />
+        <div className="App" id="app">
+          {/* <Contact /> */}
+          {/* <Current /> */}
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <Latest />
+                <HomeIntro />
+                <HomeProjectList />
+                <HomeBackground />
+                {/* <Intro homepage={true}/>
+                <UserInput homepage={true}/> */}
+              </>
+            }/>
+          
+          <Route path="/about" element={
             <>
-              <Hero />
-              <Latest />
-              <HomeIntro />
-              <HomeProjectList />
-              <HomeBackground />
-              {/* <Intro homepage={true}/>
-              <UserInput homepage={true}/> */}
+              {/* <About/>
+              <Skills />
+              <Education />
+              <Work />
+              <Intro />
+              <UserInput /> */}
+            </>
+          }/>
+
+          <Route path="/projects" element={
+            <>
+            {/* <ProjectList />
+            <Intro />
+            <UserInput /> */}
             </>
           }/>
         
-        <Route path="/about" element={
-          <>
-            {/* <About/>
-            <Skills />
-            <Education />
-            <Work />
-            <Intro />
-            <UserInput /> */}
-          </>
-        }/>
-
-        <Route path="/projects" element={
-          <>
-          {/* <ProjectList />
-          <Intro />
-          <UserInput /> */}
-          </>
-        }/>
-       
-        </Routes>
-      </div>
-      <Footer />
-    </>
+          </Routes>
+        </div>
+        <Footer />
+      </>
+    </ProjectProvider>
   );
 }
 

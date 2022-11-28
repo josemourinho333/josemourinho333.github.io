@@ -1,6 +1,6 @@
+// Just add it in the beginning as the app will reverse the order so first one here you see is awlays latest.
 const projectData = [
   {
-    id: 0,
     name: 'Tarot Card Reader & Learning',
     oneLiner: 'See what the message is for you today.',
     images: [
@@ -26,7 +26,6 @@ const projectData = [
     ]
   },
   {
-    id: 1,
     name: 'Web3 Smart Contract',
     oneLiner: 'Send crypto to another wallet.',
     images: [
@@ -47,7 +46,6 @@ const projectData = [
     ]
   },
   {
-    id: 2,
     name: 'Web Scraper',
     oneLiner: 'Be notified when someone lists a MacBook for sale below median price.',
     images: [
@@ -72,7 +70,6 @@ const projectData = [
     ]
   },
   {
-    id: 3,
     name: '... is a 10 but ... generator',
     oneLiner: 'Get a random line generated for the trendy "...is a 10 but ..." meme.',
     images: [
@@ -93,7 +90,6 @@ const projectData = [
     ]
   },
   {
-    id: 4,
     name: 'Keen Dating App',
     oneLiner: 'Meet people you are keen on.',
     images: [
@@ -122,7 +118,6 @@ const projectData = [
     ]
   },
   {
-    id: 5,
     name: 'TrailerFlix',
     oneLiner: 'Discover movies, shows and watch trailers...Netflix style.',
     images: [
@@ -149,7 +144,6 @@ const projectData = [
     ]
   },
   {
-    id: 6,
     name: 'Jungle',
     oneLiner: 'Buy and Sell Plants',
     images: [
@@ -174,7 +168,6 @@ const projectData = [
     ]
   },
   {
-    id: 7,
     name: 'eCommerce Template',
     oneLiner: 'Your typeical eCommerce template.',
     images: [
@@ -195,7 +188,6 @@ const projectData = [
     ]
   },
   {
-    id: 8,
     name: 'Interview Scheduler',
     oneLiner: 'Schedule an interview today.',
     images: [
@@ -216,7 +208,6 @@ const projectData = [
     ]
   },
   {
-    id: 9,
     name: 'Diary and Notes',
     oneLiner: 'Leave your thoughts.',
     images: [

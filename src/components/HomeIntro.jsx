@@ -45,10 +45,10 @@ const HomeIntro = () => {
         <HomeIntroCard skill="Graphic Design">
           <ImTarget className="bg-inherit w-8 h-8 text-success"/>
           <h2 className="card-title bg-inherit text-inherit inline"> 
-            <span className="bg-gradient-to-r bg-clip-text text-transparent from-success via-info to-purple-500"> Digital marketing </span>
-            and
-            <span className="bg-gradient-to-r bg-clip-text text-transparent from-success via-info to-purple-500"> graphic design </span>
-            experience with the latest tools and programs from Adobe suite. 
+            <span className="bg-gradient-to-r bg-clip-text text-transparent from-success via-info to-purple-500">Constantly learning </span>
+            and adding to my 
+            <span className="bg-gradient-to-r bg-clip-text text-transparent from-success via-info to-purple-500"> stack </span>
+            to improve as a developer.
           </h2>
         </HomeIntroCard>
       </div>
