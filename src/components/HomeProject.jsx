@@ -19,7 +19,7 @@ const HomeProject = ({bg, fullWidth, img, name, oneLiner, repo, demo}) => {
         </div>
       </div>
       <div className="basis-2/4 bg-inherit overflow-clip flex w-11/12 md:w-4/5 self-center">
-        <img src={img} alt="card" className="w-full rounded-box z-10 drop-shadow-lg object-contain"/>
+        <img src={img} alt="card" className="w-full drop-shadow-lg object-contain"/>
       </div>
     </div>
   )

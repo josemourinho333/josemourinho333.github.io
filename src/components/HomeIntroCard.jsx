@@ -1,13 +1,9 @@
 import React from 'react';
 
-const HomeIntroCard = ({children}) => {
+const HomeIntroCard = ({children, icons}) => {
   return (
-    <div className="carousel-item bg-neutral-content text-neutral rounded-3xl">
-      <div className="card w-80 bg-inherit rounded-3xl">
-        <div className="card-body bg-inherit rounded-2xl">
-          {children}
-        </div>
-      </div>
+    <div className={`carousel-item bg-neutral-content text-neutral ${!icons ?  "rounded-3xl" : ""}`}>
+      {children}
     </div>
   )
 }

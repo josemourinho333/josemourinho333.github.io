@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
 
   return (
-    <div className="navbar bg-neutral text-neutral-content p-0 sticky top-0 z-50">
+    <div className="navbar bg-neutral/80 backdrop-blur-lg text-neutral-content p-0 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
