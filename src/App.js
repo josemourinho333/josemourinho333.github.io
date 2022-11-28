@@ -14,6 +14,9 @@ import UserInput from "./components/Input/index.jsx";
 import { Routes, Route } from 'react-router-dom';
 import Hero from "./components/Hero.jsx";
 import Latest from "./components/Latest";
+import HomeIntro from "./components/HomeIntro";
+import HomeProjectList from "./components/HomeProjectList";
+import HomeContact from "./components/HomeContact";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
             <>
               <Hero />
               <Latest />
+              <HomeIntro />
+              <HomeProjectList />
+              <HomeContact />
               {/* <Intro homepage={true}/>
               <UserInput homepage={true}/> */}
             </>
