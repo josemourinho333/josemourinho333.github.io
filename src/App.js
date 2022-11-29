@@ -37,6 +37,13 @@ function App() {
           <Route path="/projects" element={
             <Projects/>
           }/>
+
+          <Route path="/skills" element={
+            <div className="bg-neutral h-screen flex justify-center items-center">
+              <HomeSkillsCarousel />
+
+            </div>
+          }/>
         
           </Routes>
         </div>
