@@ -10,6 +10,7 @@ import HomeBackground from "./components/HomeBackground";
 import { ProjectProvider } from "./ProjectContext";
 import HomeSkillsCarousel from "./components/HomeSkillsCarousel";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -30,17 +31,11 @@ function App() {
             }/>
           
           <Route path="/about" element={
-            <>
-              <About/>
-            </>
+            <About/>
           }/>
 
           <Route path="/projects" element={
-            <>
-            {/* <ProjectList />
-            <Intro />
-            <UserInput /> */}
-            </>
+            <Projects/>
           }/>
         
           </Routes>

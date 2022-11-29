@@ -70,26 +70,6 @@ const projectData = [
     ]
   },
   {
-    name: '... is a 10 but ... generator',
-    oneLiner: 'Get a random line generated for the trendy "...is a 10 but ..." meme.',
-    images: [
-      
-    ],
-    thumbnail: '',
-    description: 'You may find this app completely useless. And you completely right. I wanted to build a full stack app on something fun and silly and this is the result of it! App is built on React and Rails.',
-    stack: [
-      'Ruby on Rails', 'ReactJS', 'JavaScript'
-    ],
-    repo: 'https://github.com/josemourinho333/refactored-garbanzo',
-    demo: 'https://peaceful-bastion-57486.herokuapp.com/',
-    challenges: [
-      { 
-        issue: 'Figuring out how the different pronouns would fit in the whole final content.',
-        resolution: 'Resolved by having different pronoun categories for both genders and compiling them properly before spitting them out. More complex ones wlil need to be manually edited on the admin side.'
-      },
-    ]
-  },
-  {
     name: 'Keen Dating App',
     oneLiner: 'Meet people you are keen on.',
     images: [
@@ -114,6 +94,26 @@ const projectData = [
       { 
         issue: 'Getting used to agile environment and finising in 2 weeks time.',
         resolution: 'After coding by myself for awhile it took some time to adjust to working in a team environment and collaborating with each other to solve problems and finish the app one time with minimal features we wanted included. It took constant communication between the team members and asking/getting help when needed right away.'
+      },
+    ]
+  },
+  {
+    name: '... is a 10 but ... generator',
+    oneLiner: 'Get a random line generated for the trendy "...is a 10 but ..." meme.',
+    images: [
+      
+    ],
+    thumbnail: '',
+    description: 'You may find this app completely useless. And you completely right. I wanted to build a full stack app on something fun and silly and this is the result of it! App is built on React and Rails.',
+    stack: [
+      'Ruby on Rails', 'ReactJS', 'JavaScript'
+    ],
+    repo: 'https://github.com/josemourinho333/refactored-garbanzo',
+    demo: 'https://peaceful-bastion-57486.herokuapp.com/',
+    challenges: [
+      { 
+        issue: 'Figuring out how the different pronouns would fit in the whole final content.',
+        resolution: 'Resolved by having different pronoun categories for both genders and compiling them properly before spitting them out. More complex ones wlil need to be manually edited on the admin side.'
       },
     ]
   },
