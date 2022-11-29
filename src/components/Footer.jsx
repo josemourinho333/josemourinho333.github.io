@@ -4,7 +4,7 @@ import Socials from './Socials';
 const Footer = () => {
   return (
     <>
-    <footer className="footer pt-3 px-3 gap-y-0 bg-white md:p-10 md:gap-y-[2.5rem] text-base-content justify-items-center">
+    {/* <footer className="footer pt-3 px-3 gap-y-0 bg-white md:p-10 md:gap-y-[2.5rem] text-base-content justify-items-center">
       <div className="w-full">
         <div className="collapse md:justify-items-end max-md:collapse-plus md:collapse-open border-b border-base-300 bg-base-100 rounded-box w-full md:border-none">
           <input type="checkbox" /> 
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer> */}
     <footer className="footer px-10 py-4 border-t bg-white text-base-content border-base-300 max-md:justify-items-center gap-y-2 md:gap-y-[2.5rem]">
       <div className="avatar placeholder flex flex-row items-center">
         <div className="bg-neutral-focus text-neutral-content rounded-full w-12 ring ring-[#2997ff] ring-offset-2">

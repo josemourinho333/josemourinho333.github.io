@@ -9,6 +9,7 @@ import HomeProjectList from "./components/HomeProjectList";
 import HomeBackground from "./components/HomeBackground";
 import { ProjectProvider } from "./ProjectContext";
 import HomeSkillsCarousel from "./components/HomeSkillsCarousel";
+import About from "./components/About";
 
 function App() {
   return (
@@ -30,12 +31,7 @@ function App() {
           
           <Route path="/about" element={
             <>
-              {/* <About/>
-              <Skills />
-              <Education />
-              <Work />
-              <Intro />
-              <UserInput /> */}
+              <About/>
             </>
           }/>
 
