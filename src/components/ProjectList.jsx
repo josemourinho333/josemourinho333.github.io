@@ -37,6 +37,21 @@ const ProjectList = () => {
       )
     }
 
+    if (index === 1) {
+      return (
+        <ProjectItem
+          key={index + 999999}
+          name={project.name}
+          oneLiner={project.oneLiner}
+          desc={project.description}
+          repo={project.repo}
+          demo={project.demo ? project.demo : null}
+          img={project.images[0] ? project.images[0] : null}
+          bg="bg-base-100"
+        />
+      )
+    }
+
     if (index === 8) {
       return (
         <ProjectItem
