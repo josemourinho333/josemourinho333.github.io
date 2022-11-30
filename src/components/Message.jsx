@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IoArrowUpOutline } from 'react-icons/io5';
 import MessageBubble from './MessageBubble';
 import emailjs from '@emailjs/browser';
 import moment from 'moment/moment';
 
-const Message = () => {
-  const [messages, setMessages] = useState([
-    {preset: true, msg: {name: 'phil', notes: "Hey, I'm currently based in the Fraser Valley but open to relocation"}},
-    {preset: true, msg: {name: 'phil', notes: "Do you need a website? or maybe you're looking for a developer to add to your team?"}},
-    {preset: true, msg: {name: 'phil', notes: "I would love to hear from you! Send me a message here and I will get back to you ASAP. Don't forget to include your email!!"}},
-  ]);
+//default msgs
+const defaultMsgs = [
+  {preset: true, msg: {name: 'phil', notes: "Hey, I'm currently based in the Fraser Valley but open to relocation"}, status: true},
+  {preset: true, msg: {name: 'phil', notes: "Are you looking for a developer to add to your team? Or maybe you just need a website?"}, status: true},
+  {preset: true, msg: {name: 'phil', notes: "I would love to connect! Send me a message here and I will get back to you ASAP. Don't forget to include your email!!"}, status: true},
+];
 
+const Message = () => {
+  const [messages, setMessages] = useState(() => {
+    return JSON.parse(localStorage.getItem('portfolioMsgs')) || defaultMsgs
+  });
+
+  // input state
   const [templateParams, setTemplateParams] = useState({
     preset: false,
     msg: {
       name: 'from portfolio',
       notes: ''
     },
+    status: true,
   });
 
   const [msgStatus, setMsgStatus] = useState(null);
@@ -24,7 +31,7 @@ const Message = () => {
   const handleInputChange = (e) => {
     const notes = e.target.value;
     setTemplateParams(prev => ({
-      prev,
+      ...prev,
       msg: {
         ...prev.msg,
         notes,
@@ -34,25 +41,47 @@ const Message = () => {
 
   const sendHandler = () => {
     // new logic
-    // setstate so it shows up in the phone but no footer
-    setMessages(prev => [...prev, templateParams]);
-    // clear the input area
+    // make a copy of msg thats' being sent 
+    const latestMsg = {
+      ...templateParams
+    };
+
+    // clear the input area before the actual sending logic
     setTemplateParams({
       preset: false,
       msg: {
         name: 'from portfolio',
         notes: '',
-      }
+      },
+      status: true
     });
+
     // call the email.send function
     emailjs.send(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, templateParams.msg, `${process.env.REACT_APP_PUBLIC_KEY}`)
       .then((result) => {
-        setMsgStatus(true);
+        // setstate so it shows up in the phone
+        setMessages(prev => [...prev, latestMsg]);
+        // setMsgStatus state after 1 second for footer
+        setTimeout(() => setMsgStatus(true), 1000);
       })
       .catch((err) => {
-        setMsgStatus(false);
+        // set state so it shows up on phone but with status: false with copy msg
+        const updatedMsg = {
+          ...latestMsg,
+          status: false,
+        };
+
+        setMessages(prev => [...prev, updatedMsg]);
+        // setMsgStatus state after 1 second for footer
+        setTimeout(() => setMsgStatus(false), 1000);
       });
   }; 
+
+  useEffect(() => {
+    localStorage.setItem('portfolioMsgs', JSON.stringify(messages));
+  }, [messages]);
+
+
 
   const mappedMsgs = messages.map((msg, index) => {
     return (
@@ -60,6 +89,7 @@ const Message = () => {
         key={index+768979463746}
         message={msg.msg.notes}
         preset={msg.preset}
+        status={msg.status}
       />
     )
   });
@@ -83,14 +113,10 @@ const Message = () => {
             {
               msgStatus === null
                 ? <></>
-                : msgStatus === true
-                ? <div className="text-right pr-3 chat-footer text-gray-500 text-sm">
-                    Delivered
-                  </div>
                 : msgStatus === false
-                ? <div className="text-right pr-3 chat-footer text-red-500 text-sm">
-                    Not Delivered
-                  </div>
+                ? <div className="text-right pr-3 chat-footer text-red-500 text-sm">Not Delivered</div>
+                : msgStatus === true
+                ? <div className="text-right pr-3 chat-footer text-gray-500 text-sm">Delivered</div>
                 : <></>
             }
           </div>
