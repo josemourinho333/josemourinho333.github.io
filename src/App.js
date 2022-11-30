@@ -1,57 +1,54 @@
-import "./scss/styles.js";
 import "./index.css";
-import Intro from './components/Intro';
-import Current from "./components/Current.jsx";
-import Featured from "./components/Featured/index";
-import ProjectList from "./components/ProjectList.jsx";
-import About from './components/About';
-import Skills from "./components/Skills.jsx";
 import Nav from "./components/Nav/index.jsx";
-import Education from "./components/Education.jsx";
-import Work from "./components/Work.jsx";
 import Footer from "./components/Footer.jsx";
-import Contact from "./components/Contact.jsx";
-import UserInput from "./components/Input/index.jsx";
 import { Routes, Route } from 'react-router-dom';
+import Hero from "./components/Hero.jsx";
+import Latest from "./components/Latest";
+import HomeIntro from "./components/HomeIntro";
+import HomeProjectList from "./components/HomeProjectList";
+import HomeBackground from "./components/HomeBackground";
+import { ProjectProvider } from "./ProjectContext";
+import HomeSkillsCarousel from "./components/HomeSkillsCarousel";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-      <Nav />
-      <div className="App" id="app">
-        {/* <Contact /> */}
-        {/* <Current /> */}
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Intro homepage={true}/>
-              <UserInput homepage={true}/>
-            </>
-          }/>
-        
-        <Route path="/about" element={
-          <>
-            <About/>
-            <Skills />
-            <Education />
-            <Work />
-            <Intro />
-            <UserInput />
-          </>
-        }/>
-
-        <Route path="/projects" element={
-          <>
-          <ProjectList />
-          <Intro />
-          <UserInput />
-          </>
-        }/>
-       
-        </Routes>
-      </div>
-      {/* <Footer /> */}
-    </>
+    <ProjectProvider>
+      <>
+        <Nav />
+        <div className="App" id="app">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <Latest />
+                <HomeIntro />
+                <HomeProjectList />
+                <HomeBackground />
+                <HomeSkillsCarousel />
+              </>
+            }/>
+            <Route path="/about" element={
+              <About/>
+            }/>
+            <Route path="/projects" element={
+              <Projects/>
+            }/>
+            <Route path="/skills" element={
+              <div className="bg-neutral h-[100vh] flex justify-center items-center">
+                <HomeSkillsCarousel />
+              </div>
+            }/>
+            <Route path="/contact" element={
+              <Contact />
+            }/>
+          </Routes>
+        </div>
+        <Footer />
+      </>
+    </ProjectProvider>
   );
 }
 
