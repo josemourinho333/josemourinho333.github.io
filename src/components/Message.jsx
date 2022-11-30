@@ -61,7 +61,7 @@ const Message = () => {
       <div className="camera"></div> 
       <div className="display">
         <div className="artboard artboard-demo phone-1 bg-neutral overflow-y-auto justify-start w-full">
-          <div className="bg-zinc-700/80 backdrop-blur-sm text-neutral-content w-full sticky top-0 self-center min-h-[15%] flex flex-col items-center justify-end pb-1">
+          <div className="bg-zinc-700 text-neutral-content w-full sticky top-0 self-center min-h-[15%] flex flex-col items-center justify-end pb-1">
             <div className="avatar placeholder">
               <div className="bg-zinc-600 text-neutral-content rounded-full w-8">
                 <span>P</span>
@@ -73,7 +73,7 @@ const Message = () => {
             <div className="text-gray-500 text-xs text-center mb-2">Today {moment().format('LT')}</div>
             {mappedMsgs}
           </div>
-          <div className="w-full bg-neutral/70 backdrop-blur-sm sticky bottom-0 flex justify-center pb-5 pt-1">
+          <div className="w-full bg-neutral sticky bottom-0 flex justify-center pb-5 pt-1">
             <div className="form-control w-full">
               <div className="input-group items-center relative">
                 <input 
