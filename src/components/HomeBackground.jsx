@@ -23,8 +23,8 @@ const HomeBackground = () => {
         </div>
         <div className="card w-full h-[300px] lg:basis-1/2 flex-shrink-0 shadow-2xl bg-base-100 text-neutral-content py-5 px-3 rounded-box">
           <div className="tabs bg-inherit justify-evenly">
-            <a className={`tab tab-sm tab-bordered bg-inherit basis-1/2 ${activeTab === "Experience" ? "tab-active" : ''}`} onClick={() => tabClickHandler('Experience')}>Experience</a> 
-            <a className={`tab tab-sm tab-bordered bg-inherit basis-1/2 ${activeTab === "Education" ? "tab-active" : ''}`} onClick={() => tabClickHandler('Education')}>Education</a>
+            <button className={`tab tab-sm tab-bordered bg-inherit basis-1/2 ${activeTab === "Experience" ? "tab-active" : ''}`} onClick={() => tabClickHandler('Experience')}>Experience</button> 
+            <button className={`tab tab-sm tab-bordered bg-inherit basis-1/2 ${activeTab === "Education" ? "tab-active" : ''}`} onClick={() => tabClickHandler('Education')}>Education</button>
           </div>
           <div className="bg-inherit overflow-y-auto text-neutral px-3 py-5">
             {

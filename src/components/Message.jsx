@@ -8,7 +8,7 @@ const Message = () => {
   const [messages, setMessages] = useState([
     {preset: true, msg: {name: 'phil', notes: "Hey, I'm currently based in the Fraser Valley but open to relocation"}},
     {preset: true, msg: {name: 'phil', notes: "Do you need a website? or maybe you're looking for a developer to add to your team?"}},
-    {preset: true, msg: {name: 'phil', notes: "If so, I would love to hear from you! Send me a message here and I will get back to you ASAP. Don't forget to include your email!!"}},
+    {preset: true, msg: {name: 'phil', notes: "I would love to hear from you! Send me a message here and I will get back to you ASAP. Don't forget to include your email!!"}},
   ]);
 
   const [templateParams, setTemplateParams] = useState({

@@ -13,7 +13,6 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
-
 function App() {
   return (
     <ProjectProvider>
@@ -31,26 +30,20 @@ function App() {
                 <HomeSkillsCarousel />
               </>
             }/>
-          
-          <Route path="/about" element={
-            <About/>
-          }/>
-
-          <Route path="/projects" element={
-            <Projects/>
-          }/>
-
-          <Route path="/skills" element={
-            <div className="bg-neutral h-screen flex justify-center items-center">
-              <HomeSkillsCarousel />
-
-            </div>
-          }/>
-
-          <Route path="/contact" element={
-            <Contact />
-          }/>
-        
+            <Route path="/about" element={
+              <About/>
+            }/>
+            <Route path="/projects" element={
+              <Projects/>
+            }/>
+            <Route path="/skills" element={
+              <div className="bg-neutral h-[100vh] flex justify-center items-center">
+                <HomeSkillsCarousel />
+              </div>
+            }/>
+            <Route path="/contact" element={
+              <Contact />
+            }/>
           </Routes>
         </div>
         <Footer />
