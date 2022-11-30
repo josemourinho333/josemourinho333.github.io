@@ -262,12 +262,12 @@ const Work = ({activeTab}) => {
           <div className="text-neutral font-bold text-sm md:text-base"></div>
           <div className="info-content text-sm"></div>
           <ul className="list-disc ml-1 mt-2 text-sm md:ml-5 md:text-base">
-            <li>JavaScript frameworks including reaect.js and Next.js</li>
+            <li>JavaScript frameworks including React.js and Next.js</li>
             <li>CSS libraries and tools such as Tailwind CSS, Bootstrap, Sass, DaisyUI</li>
             <li>Backend stack including Node.js and Express</li>
             <li>Full stack frameworks like Rails</li>
             <li>Database tools like Postgres, MySQL</li>
-            <li>Built tools like Webpack</li>
+            <li>Build tools like Webpack</li>
             <li>Design tools like Figma and XD</li>
           </ul>
         </div>    
