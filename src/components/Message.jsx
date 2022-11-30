@@ -19,6 +19,8 @@ const Message = () => {
     },
   });
 
+  const [msgStatus, setMsgStatus] = useState(null);
+
   const handleInputChange = (e) => {
     const notes = e.target.value;
     setTemplateParams(prev => ({
@@ -31,19 +33,25 @@ const Message = () => {
   };
 
   const sendHandler = () => {
+    // new logic
+    // setstate so it shows up in the phone but no footer
+    setMessages(prev => [...prev, templateParams]);
+    // clear the input area
+    setTemplateParams({
+      preset: false,
+      msg: {
+        name: 'from portfolio',
+        notes: '',
+      }
+    });
+    // call the email.send function
     emailjs.send(`${process.env.REACT_APP_SERVICE_ID}`, `${process.env.REACT_APP_TEMPLATE_ID}`, templateParams.msg, `${process.env.REACT_APP_PUBLIC_KEY}`)
       .then((result) => {
-        console.log('success', result.status, result.text);
-        setMessages(prev => [...prev, templateParams]);
-        setTemplateParams({
-          preset: false,
-          msg: {
-            name: 'from portfolio',
-            notes: '',
-          }
-        });
+        setMsgStatus(true);
       })
-      .catch((err) => console.log('err', err));
+      .catch((err) => {
+        setMsgStatus(false);
+      });
   }; 
 
   const mappedMsgs = messages.map((msg, index) => {
@@ -72,6 +80,19 @@ const Message = () => {
           <div className="flex-shrink-1 overflow-y-auto bg-neutral w-full h-full flex flex-col justify-end p-2">
             <div className="text-gray-500 text-xs text-center mb-2">Today {moment().format('LT')}</div>
             {mappedMsgs}
+            {
+              msgStatus === null
+                ? <></>
+                : msgStatus === true
+                ? <div className="text-right pr-3 chat-footer text-gray-500 text-sm">
+                    Delivered
+                  </div>
+                : msgStatus === false
+                ? <div className="text-right pr-3 chat-footer text-red-500 text-sm">
+                    Not Delivered
+                  </div>
+                : <></>
+            }
           </div>
           <div className="w-full bg-neutral sticky bottom-0 flex justify-center pb-5 pt-1">
             <div className="form-control w-full">
