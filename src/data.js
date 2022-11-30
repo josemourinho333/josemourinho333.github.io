@@ -47,7 +47,7 @@ const projectData = [
   },
   {
     name: 'Web Scraper',
-    oneLiner: 'Be notified when someone lists a MacBook for sale below median price.',
+    oneLiner: 'Be the first to know about underpriced MacBooks.',
     images: [
       'https://github.com/josemourinho333/scraps/raw/master/docs/scraper-ui.PNG?raw=true',
       'https://github.com/josemourinho333/scraps/raw/master/docs/scraper-listing.PNG?raw=true',
@@ -104,7 +104,7 @@ const projectData = [
       
     ],
     thumbnail: '',
-    description: 'You may find this app completely useless. And you completely right. I wanted to build a full stack app on something fun and silly and this is the result of it! App is built on React and Rails.',
+    description: 'Full stack Rails/React app on something fun and silly and this is the result of it! App will randomly generate a line for the user. Users can also submit their own ideas and backend will automatically adjust grammar with special cases needing manual intervention and queued up accordingly.',
     stack: [
       'Ruby on Rails', 'ReactJS', 'JavaScript'
     ],
