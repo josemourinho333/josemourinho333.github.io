@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MessageBubble = ({preset, message}) => {
+const MessageBubble = ({preset, message, status}) => {
 
   if (!preset) {
     return (

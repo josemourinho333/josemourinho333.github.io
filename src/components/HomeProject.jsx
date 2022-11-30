@@ -8,7 +8,7 @@ const HomeProject = ({bg, fullWidth, img, name, oneLiner, repo, demo}) => {
         <h1 className={`bg-inherit text-center text-xl md:text-4xl font-extrabold ${bg === "bg-neutral" ? "text-neutral-content" : ""}`}>
           {name}
         </h1>
-        <p className={`bg-inherit text-base md:text-lg mt-2 text-center ${bg === "bg-neutral" ? "text-neutral-content" : ""}`}>{oneLiner}</p>
+        <p className={`bg-inherit text-base px-5 md:text-lg mt-2 text-center ${bg === "bg-neutral" ? "text-neutral-content" : ""}`}>{oneLiner}</p>
         <div className="flex flex-row justify-center items-center text-base md:text-lg bg-inherit md:flex-row">
           {
             !demo

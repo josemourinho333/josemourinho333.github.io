@@ -29,7 +29,9 @@ const projectData = [
     name: 'Web3 Smart Contract',
     oneLiner: 'Send crypto to another wallet.',
     images: [
-
+      'https://github.com/josemourinho333/curly-octo-broccoli/blob/master/docs/w3-home.png?raw=true',
+      'https://github.com/josemourinho333/curly-octo-broccoli/blob/master/docs/w3-connected.png?raw=true',
+      'https://github.com/josemourinho333/curly-octo-broccoli/blob/master/docs/w3-metainfo.png?raw=true'
     ],
     thumbnail: '',
     description: 'Simple Web 3.0 blockchain app where users can send crypto to a wallet and interact with smart contracts with metamask.',
@@ -47,7 +49,7 @@ const projectData = [
   },
   {
     name: 'Web Scraper',
-    oneLiner: 'Be notified when someone lists a MacBook for sale below median price.',
+    oneLiner: 'Be the first to know about underpriced MacBooks.',
     images: [
       'https://github.com/josemourinho333/scraps/raw/master/docs/scraper-ui.PNG?raw=true',
       'https://github.com/josemourinho333/scraps/raw/master/docs/scraper-listing.PNG?raw=true',
@@ -101,10 +103,14 @@ const projectData = [
     name: '... is a 10 but ... generator',
     oneLiner: 'Get a random line generated for the trendy "...is a 10 but ..." meme.',
     images: [
-      
+      'https://github.com/josemourinho333/refactored-garbanzo/blob/master/client/docs/gen-home.png?raw=true',
+      'https://github.com/josemourinho333/refactored-garbanzo/blob/master/client/docs/gen-random.png?raw=true',
+      'https://github.com/josemourinho333/refactored-garbanzo/blob/master/client/docs/gen-m-random.png?raw=true',
+      'https://github.com/josemourinho333/refactored-garbanzo/blob/master/client/docs/gen-w-random.png?raw=true',
+      'https://github.com/josemourinho333/refactored-garbanzo/blob/master/client/docs/gen-add.png?raw=true'
     ],
     thumbnail: '',
-    description: 'You may find this app completely useless. And you completely right. I wanted to build a full stack app on something fun and silly and this is the result of it! App is built on React and Rails.',
+    description: 'Full stack Rails/React app on something fun and silly and this is the result of it! App will randomly generate a line for the user. Users can also submit their own ideas and backend will automatically adjust grammar with special cases needing manual intervention and queued up accordingly.',
     stack: [
       'Ruby on Rails', 'ReactJS', 'JavaScript'
     ],
@@ -167,31 +173,35 @@ const projectData = [
       },
     ]
   },
-  {
-    name: 'eCommerce Template',
-    oneLiner: 'Your typeical eCommerce template.',
-    images: [
+  // {
+  //   name: 'eCommerce Template',
+  //   oneLiner: 'Your typeical eCommerce template.',
+  //   images: [
       
-    ],
-    thumbnail: '',
-    description: 'Built with Ruby on Rails building a super simple eCommerce template site using fakestore API.',
-    stack: [
-      'Ruby on Rails', 'JavaScript', 'SCSS', 'HTML/CSS'
-    ],
-    repo: 'https://github.com/josemourinho333/fakestore-rails',
-    demo: '',
-    challenges: [
-      { 
-        issue: 'Consuming API on Ruby',
-        resolution: 'First time data fetching from an external API on Ruby app, and after reading the documentations it was super clear and probably one of my favourite ways of doing it, though JavaScript/React way is more embedded in my brain.'
-      },
-    ]
-  },
+  //   ],
+  //   thumbnail: '',
+  //   description: 'Built with Ruby on Rails building a super simple eCommerce template site using fakestore API.',
+  //   stack: [
+  //     'Ruby on Rails', 'JavaScript', 'SCSS', 'HTML/CSS'
+  //   ],
+  //   repo: 'https://github.com/josemourinho333/fakestore-rails',
+  //   demo: '',
+  //   challenges: [
+  //     { 
+  //       issue: 'Consuming API on Ruby',
+  //       resolution: 'First time data fetching from an external API on Ruby app, and after reading the documentations it was super clear and probably one of my favourite ways of doing it, though JavaScript/React way is more embedded in my brain.'
+  //     },
+  //   ]
+  // },
   {
     name: 'Interview Scheduler',
     oneLiner: 'Schedule an interview today.',
     images: [
-      
+      'https://github.com/josemourinho333/scheduler/blob/master/docs/sch-home.png?raw=true',
+      'https://github.com/josemourinho333/scheduler/blob/master/docs/sch-add.png?raw=true',
+      'https://github.com/josemourinho333/scheduler/blob/master/docs/sch-save.png?raw=true',
+      'https://github.com/josemourinho333/scheduler/blob/master/docs/sch-delete.png?raw=true',
+      'https://github.com/josemourinho333/scheduler/blob/master/docs/sch-edit.png?raw=true'
     ],
     thumbnail: '',
     description: 'A simple interview/appointment booking app using React, Webpack, Babel, Axios, WebSockets and tested with Storybook, Jest and Testing Library.',
@@ -202,31 +212,31 @@ const projectData = [
     demo: 'https://beautiful-beignet-2c88ff.netlify.app/',
     challenges: [
       { 
-        issue: '',
-        resolution: ''
+        issue: 'First time deploying anything and implementing CircleCI',
+        resolution: 'My very first deployed app that I built. It took some time reading up on the how-tos to deploy an app on Heroku and implementing CircleCI as well for tests that I have set up. After reading and with the help from mentors, I was able to get it going and learned how useful it is to have CircleCI involved.'
       },
     ]
   },
-  {
-    name: 'Diary and Notes',
-    oneLiner: 'Leave your thoughts.',
-    images: [
+  // {
+  //   name: 'Diary and Notes',
+  //   oneLiner: 'Leave your thoughts.',
+  //   images: [
       
-    ],
-    thumbnail: '',
-    description: 'Simple diary/notes app utilizing local storage to store written pieces from the user.',
-    stack: [
-      'JavaScript', 'HTML/CSS'
-    ],
-    repo: 'https://github.com/josemourinho333/diary-notes',
-    demo: '',
-    challenges: [
-      { 
-        issue: 'First time using local storage',
-        resolution: 'After reading about some code and documentation on how local storage works, it was straight forward and easy. Saw good use cases for using local storage other apps that I will be working on.'
-      },
-    ]
-  },
+  //   ],
+  //   thumbnail: '',
+  //   description: 'Simple diary/notes app utilizing local storage to store written pieces from the user.',
+  //   stack: [
+  //     'JavaScript', 'HTML/CSS'
+  //   ],
+  //   repo: 'https://github.com/josemourinho333/diary-notes',
+  //   demo: '',
+  //   challenges: [
+  //     { 
+  //       issue: 'First time using local storage',
+  //       resolution: 'After reading about some code and documentation on how local storage works, it was straight forward and easy. Saw good use cases for using local storage other apps that I will be working on.'
+  //     },
+  //   ]
+  // },
 ];
 
 export default projectData;

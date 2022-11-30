@@ -37,11 +37,9 @@ const HomeProjectList = ({projectsPage}) => {
 
   const groupedJsx = groupByN(2, projectsArr);
 
-  console.log('final', groupedJsx);
-
   const renderList = groupedJsx?.map((jsx, index) => {
       return (
-        <div key={index + 696969} className="h-[90vh] md:h-[60vh] lg:h-[70vh] bg-inherit flex flex-col md:flex-row gap-2">
+        <div key={index + 696969} className="h-[90vh] md:h-[60vh] lg:h-[70vh] bg-inherit flex flex-col md:flex-row gap-3">
           {
             index % 2 === 0
               ? jsx.reverse()
@@ -52,7 +50,7 @@ const HomeProjectList = ({projectsPage}) => {
   });
   
   return (
-    <div className="bg-[#fbfbfd] flex flex-col text-neutral gap-y-2 p-2">
+    <div className="bg-zinc-100 flex flex-col text-neutral gap-y-3 p-3">
       {
         !projectsPage
           ? renderList.slice(0, 2)
