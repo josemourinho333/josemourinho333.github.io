@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import WorkItem from './WorkItem';
 
 const Work = ({activeTab}) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const windowResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', windowResize);
+
+    return () => {
+      window.removeEventListener('resize', windowResize);
+    };
+  }, []);
+
 
   if (activeTab === "Education" ) {
     return (
@@ -18,7 +32,15 @@ const Work = ({activeTab}) => {
         </WorkItem>
         <WorkItem>
           <div className="basis-1/4 flex flex-col items-end">
-            <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2014 - 2016</div>
+            {
+              width > 500
+                ? <div className="text-gray-500 text-xs text-center md:text-base md:text-left">
+                    2014 - 2016
+                  </div>
+                : <div className="text-gray-500 text-xs text-center md:text-base md:text-left">
+                    2014<br/>-<br/>2016
+                  </div>
+            }
             <div className="text-gray-500 text-[0.5rem] md:text-sm"></div>
           </div>
           <div className="basis-2/4 flex flex-col items-start">
@@ -46,7 +68,11 @@ const Work = ({activeTab}) => {
 
         <WorkItem>
           <div className="basis-1/4 flex flex-col items-end">
-            <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2019 - 2022</div>
+            {
+              width > 500
+                ? <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2019 - 2022</div>
+                : <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2019<br/>-<br/>2022</div>
+              }
             <div className="text-gray-500 text-[0.5rem] md:text-sm"></div>
           </div>
           <div className="basis-2/4 flex flex-col items-start">
@@ -57,7 +83,11 @@ const Work = ({activeTab}) => {
 
         <WorkItem>
           <div className="basis-1/4 flex flex-col items-end">
-            <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2017 - 2019</div>
+            {
+              width > 500
+                ? <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2017 - 2019</div>
+                : <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2017<br/>-<br/>2019</div>
+              }
             <div className="text-gray-500 text-[0.5rem] md:text-sm"></div>
           </div>
           <div className="basis-2/4 flex flex-col items-start">
@@ -68,7 +98,11 @@ const Work = ({activeTab}) => {
 
         <WorkItem>
           <div className="basis-1/4 flex flex-col items-end">
-            <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2016 - 2017</div>
+            {
+              width > 500
+                ? <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2016 - 2017</div>
+                : <div className="text-gray-500 text-xs text-center md:text-base md:text-left">2016<br/>-<br/>2017</div>
+              }
             <div className="text-gray-500 text-[0.5rem] md:text-sm"></div>
           </div>
           <div className="basis-2/4 flex flex-col items-start">
@@ -113,7 +147,11 @@ const Work = ({activeTab}) => {
       </WorkItem>
       <WorkItem>
         <div className="basis-1/4 flex flex-col items-end">
-          <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2019 - 2022</div>
+          {
+            width > 500
+              ? <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2019 - 2022</div>
+              : <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2019<br/>-<br/>2022</div>
+          }
           <div className="text-gray-500 text-[0.7rem] md:text-sm"></div>
         </div>
         <div className="basis-2/4 flex flex-col items-start">
@@ -132,7 +170,11 @@ const Work = ({activeTab}) => {
       </WorkItem>
       <WorkItem>
         <div className="basis-1/4 flex flex-col items-end">
-          <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2017 - 2019</div>
+          {
+            width > 500
+              ? <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2017 - 2019</div>
+              : <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2017<br/>-<br/>2019</div>
+          }
           <div className="text-gray-500 text-[0.7rem] md:text-sm"></div>
         </div>
         <div className="basis-2/4 flex flex-col items-start">
@@ -150,7 +192,11 @@ const Work = ({activeTab}) => {
       </WorkItem>
       <WorkItem>
         <div className="basis-1/4 flex flex-col items-end">
-          <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2016 - 2017</div>
+          {
+            width > 500
+              ? <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2016 - 2017</div>
+              : <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2016<br/>-<br/>2017</div>
+          }
           <div className="text-gray-500 text-[0.7rem] md:text-sm"></div>
         </div>
         <div className="basis-2/4 flex flex-col items-start">
@@ -185,7 +231,11 @@ const Work = ({activeTab}) => {
         </WorkItem>
         <WorkItem>
           <div className="basis-1/4 flex flex-col items-end">
-            <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2014 - 2016</div>
+            {
+              width > 500
+                ? <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2014 - 2016</div>
+                : <div className="text-gray-500 text-lg text-center md:text-xl md:text-left">2014<br/>-<br/>2016</div>
+            }
             <div className="text-gray-500 text-[0.5rem] md:text-sm"></div>
           </div>
           <div className="basis-2/4 flex flex-col items-start">
