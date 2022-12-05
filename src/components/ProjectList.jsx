@@ -100,7 +100,7 @@ const ProjectList = () => {
   })
 
   return (
-    <div className="carousel carousel-center max-w-screen space-x-4 rounded-box bg-inherit p-10">
+    <div className="carousel carousel-center max-w-screen space-x-4 rounded-box bg-inherit max-sm:px-2 p-10">
       <ProjectItem base={true}/>
       {renderProjectItems}
     </div>
