@@ -17,7 +17,7 @@ const projectData = [
       'NextJS', 'ReactJS', 'JavaScript', 'NodeJS', 'Express', 'Postgres', 'Tailwind', 'DasiyUI', 'Axios'
     ],
     repo: 'https://github.com/josemourinho333/tarot-me',
-    demo: 'https://scintillating-scone-d0792d.netlify.app/',
+    demo: 'https://tarotme.netlify.app/',
     challenges: [
       { 
         issue: 'Issues with data fetching times and rendering the page properly once completed',
