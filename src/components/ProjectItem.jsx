@@ -2,6 +2,8 @@ import React from 'react';
 
 const ProjectItem = ({bg, base, name, oneLiner, desc, repo, demo, img}) => {
   return (
+    <>
+    <a href={demo ? demo : repo} target="_blank" rel="noopener noreferrer">
     <div className="carousel-item cursor-pointer">
       <div className={`card h-[30rem] ${base ? "bg-transparent shadow-none w-0 md:w-[4rem] lg:w-[12rem] xl:w-[20rem] 2xl:w-[28rem]" : `${bg} shadow-lg w-[22rem] md:w-[26rem] lg:w-[30rem]`} rounded-2xl`}>
         {
@@ -18,6 +20,8 @@ const ProjectItem = ({bg, base, name, oneLiner, desc, repo, demo, img}) => {
         }
       </div>
     </div>
+    </a>
+    </>
   )
 }
 
