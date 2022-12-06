@@ -209,7 +209,7 @@ const projectData = [
       'ReacJS', 'JavaScript', 'SCSS', 'HTML/CSS'
     ],
     repo: 'https://github.com/josemourinho333/scheduler',
-    demo: '',
+    demo: 'https://beautiful-beignet-2c88ff.netlify.app/',
     challenges: [
       { 
         issue: 'First time deploying anything and implementing CircleCI',
