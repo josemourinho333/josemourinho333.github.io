@@ -115,7 +115,7 @@ const projectData = [
       'Ruby on Rails', 'ReactJS', 'JavaScript'
     ],
     repo: 'https://github.com/josemourinho333/refactored-garbanzo',
-    demo: 'https://peaceful-bastion-57486.herokuapp.com/',
+    demo: '',
     challenges: [
       { 
         issue: 'Figuring out how the different pronouns would fit in the whole final content.',
@@ -209,7 +209,7 @@ const projectData = [
       'ReacJS', 'JavaScript', 'SCSS', 'HTML/CSS'
     ],
     repo: 'https://github.com/josemourinho333/scheduler',
-    demo: 'https://beautiful-beignet-2c88ff.netlify.app/',
+    demo: '',
     challenges: [
       { 
         issue: 'First time deploying anything and implementing CircleCI',
