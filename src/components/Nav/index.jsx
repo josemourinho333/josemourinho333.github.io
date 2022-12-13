@@ -32,7 +32,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className="navbar-end p-[1rem]">
-        <a href="https://resume.creddle.io/resume/6k8iwdwj8sr" target="_blank" rel="noreferrer" className="btn btn-xs border-neutral-content md:btn-sm">Resume</a>
+        <a href="https://www.canva.com/design/DAFUq-O-Lxo/UzgynRCCTycCK7sVBvB87g/view?utm_content=DAFUq-O-Lxo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noreferrer" className="btn btn-xs border-neutral-content md:btn-sm">Resume</a>
       </div>
     </div>
   )
