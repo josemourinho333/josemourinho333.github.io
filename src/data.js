@@ -1,6 +1,26 @@
 // Just add it in the beginning as the app will reverse the order so first one here you see is awlays latest.
 const projectData = [
   {
+    name: "You'reAgo",
+    oneLiner: 'Write to your highest self 1 year into the future and track your emotions.',
+    images: [
+      'https://github.com/josemourinho333/josemourinho333.github.io/blob/master/docs/youreago-card.png?raw=true'
+    ],
+    thumbnail: '',
+    description: 'Journaling app where users can register with their email/pass or log in with their Google account via Firebase authentication and start journaling their day, track their emotions and things they are grateful for. Entries are saved in firestore. Entries will then be emailed to you a year after. App is built with Next.js.',
+    stack: [
+      'NextJS', 'Firebase', 'Firestore', 'ReactJS', 'JavaScript', 'NodeJS', 'Express', 'Postgres', 'Tailwind', 'DasiyUI'
+    ],
+    repo: 'https://github.com/josemourinho333/YouAgo',
+    demo: 'https://youreago.netlify.app/',
+    challenges: [
+      { 
+        issue: 'Using .toDateString() as entry keys and referencing them to fetch entries not working',
+        resolution: 'Somehow using date string as entry keys was not the way to go. When referencing the date string to fetch entries, it was not working. I solved this issue by turning datestirng into valueOf() and saving them as keys.'
+      },
+    ]
+  },
+  {
     name: 'Tarot Card Reader & Learning',
     oneLiner: 'See what the message is for you today.',
     images: [
