@@ -28,7 +28,7 @@ const Latest = ({projectPage}) => {
           <a href={project.repo} className="bg-inherit text-[#06c] flex items-center m-2">Code<HiChevronRight className="bg-inherit pt-0.5 w-5 h-5"/></a>
         </div>
         <div className="bg-inherit overflow-clip h-[300px] md:h-[500px] flex mt-10 w-full">
-          <img src={project.thumbnail ? project.thumbnail : project.images[0]} alt="card" className="h-[90%] rounded-box m-auto z-10 rotate-12 shadow-md"/>
+          <img src={project.thumbnail ? project.thumbnail : project.images[0]} alt="card" className="h-[90%] rounded-box m-auto z-10 shadow-md"/>
         </div>
       </div>
     )
