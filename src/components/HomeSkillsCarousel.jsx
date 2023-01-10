@@ -1,10 +1,9 @@
 import React, {useEffect} from 'react';
 import HomeIntroCard from './HomeIntroCard';
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiHeroku, SiAdobeillustrator, SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiFigma, SiGimp, SiCanva, SiGoogleanalytics, SiGoogleads, SiDocker  } from 'react-icons/si';
-import { TbBrandMeta } from 'react-icons/tb';
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiFirebase, SiNextdotjs} from 'react-icons/si';
 
 const HomeSkillsCarousel = () => {
-  const icons = [ <SiJavascript/>, <SiHtml5/>, <SiCss3/>, <SiReact/>, <SiRuby/>, <SiJquery/>, <SiSass/>, <SiBootstrap/>, <SiTailwindcss/>, <SiNodedotjs/>, <SiExpress/>, <SiPostgresql/>, <SiMysql/>, <SiRubyonrails/>, <SiCypress/>, <SiMocha/>, <SiChai/>, <SiJest/>, <SiStorybook/>, <SiEslint/>, <SiGit/>, <SiGithub/>, <SiNpm/>, <SiNetlify/>, <SiHeroku/>, <SiAdobeillustrator/>, <SiAdobeaftereffects/>, <SiAdobephotoshop/>, <SiAdobexd/>, <SiFigma/>, <SiGimp/>, <SiCanva/>, <SiGoogleanalytics/>, <SiGoogleads/>, <SiDocker/>, <TbBrandMeta/>];
+  const icons = [<SiReact/>, <SiNextdotjs/>, <SiJavascript/>, <SiNodedotjs/>, <SiExpress/>, <SiPostgresql/>, <SiMysql/>, <SiFirebase/>, <SiRuby/>, <SiRubyonrails/>, <SiTailwindcss/>, <SiSass/>, <SiHtml5/>, <SiCss3/>, <SiBootstrap/>, <SiJquery/>, <SiCypress/>, <SiMocha/>, <SiChai/>, <SiJest/>, <SiStorybook/>, <SiEslint/>, <SiGit/>, <SiGithub/>, <SiNpm/>, <SiNetlify/>];
 
   useEffect(() => {
     const icons = document?.querySelectorAll('div.react-icons svg');

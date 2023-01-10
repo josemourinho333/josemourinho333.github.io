@@ -12,6 +12,7 @@ import HomeSkillsCarousel from "./components/HomeSkillsCarousel";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import SkillsList from "./components/SkillsList";
 
 function App() {
   return (
@@ -37,9 +38,7 @@ function App() {
               <Projects/>
             }/>
             <Route path="/skills" element={
-              <div className="bg-neutral h-[100vh] flex justify-center items-center">
-                <HomeSkillsCarousel />
-              </div>
+              <SkillsList />
             }/>
             <Route path="/contact" element={
               <Contact />
