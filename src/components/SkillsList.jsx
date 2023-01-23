@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
-import HomeIntroCard from './HomeIntroCard';
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiFirebase, SiNextdotjs} from 'react-icons/si';
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRuby, SiJquery, SiSass, SiBootstrap, SiTailwindcss, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiRubyonrails, SiCypress, SiMocha, SiChai, SiJest, SiStorybook, SiEslint, SiGit, SiGithub, SiNpm, SiNetlify, SiFirebase, SiNextdotjs, SiVuedotjs, SiLaravel} from 'react-icons/si';
 
 const SkillsList = () => {
-  const icons = [<SiReact/>, <SiNextdotjs/>, <SiJavascript/>, <SiNodedotjs/>, <SiExpress/>, <SiPostgresql/>, <SiMysql/>, <SiFirebase/>, <SiRuby/>, <SiRubyonrails/>, <SiTailwindcss/>, <SiSass/>, <SiHtml5/>, <SiCss3/>, <SiBootstrap/>, <SiJquery/>, <SiCypress/>, <SiMocha/>, <SiChai/>, <SiJest/>, <SiStorybook/>, <SiEslint/>, <SiGit/>, <SiGithub/>, <SiNpm/>, <SiNetlify/>];
 
   useEffect(() => {
     const icons = document?.querySelectorAll('div.react-icons svg');
@@ -13,34 +11,125 @@ const SkillsList = () => {
     });
   }, []);
 
-  const mappedIcons = icons.map((icon, index) => {
-    console.log('icon', icon.type.name);
-    let stackName;
-
-    if (icon.type.name === 'SiNodedotjs' || icon.type.name === 'SiNextdotjs' ) {
-      stackName = icon.type.name.replace('dot', '').substring(2);
-    } else {
-      stackName = icon.type.name.substring(2);
-    }
-
-    return (
-      <HomeIntroCard key={index} icons={true}>
-        <div key={index + 3000} className="react-icons w-full flex items-center justify-center bg-neutral text-white">
-          <div className="tooltip tooltip-open tooltip-bottom tooltip-info" data-tip={stackName}>
-            {icon}
-          </div>
-        </div>
-      </HomeIntroCard>
-    )
-  });
-
   return (
     <div className="min-h-screen bg-neutral text-neutral-content flex flex-col justify-center items-center gap-y-10">
       <h2 className="text-center text-2xl md:text-3xl text-neutral-content font-bold">
         Some of the <span className="text-blue-500">techs</span> and <span className="text-blue-500">tools</span> I use.
       </h2>
       <div className="flex flex-row gap-12 flex-wrap w-3/4 justify-center items-center">
-        {mappedIcons}
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="React">
+            <SiReact/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Next.js">
+            <SiNextdotjs/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Vue.js">
+            <SiVuedotjs/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Javascript">
+            <SiJavascript/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Node.js">
+            <SiNodedotjs/>
+          </div>
+          
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Express">
+            <SiExpress/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="PostgreSQL">
+            <SiPostgresql/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="MySQL">
+            <SiMysql/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Firebase">
+            <SiFirebase/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Laravel">
+            <SiLaravel/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Ruby">
+            <SiRuby/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Ruby on Rails">
+            <SiRubyonrails/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Tailwind">
+            <SiTailwindcss/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="SaSS">
+            <SiSass/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="HTML5">
+            <SiHtml5/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="CSS3">
+            <SiCss3/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Bootstrap">
+            <SiBootstrap/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="jQuery">
+            <SiJquery/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Cypress">
+            <SiCypress/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Mocha">
+            <SiMocha/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Chai">
+            <SiChai/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Jest">
+            <SiJest/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Storybook">
+            <SiStorybook/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="ESLint">
+            <SiEslint/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Git">
+            <SiGit/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Github">
+            <SiGithub/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Npm">
+            <SiNpm/>
+          </div>
+
+          <div className="react-icons tooltip tooltip-open tooltip-bottom tooltip-info" data-tip="Netlify">
+            <SiNetlify/>
+          </div>
+
       </div>
     </div>
   )
