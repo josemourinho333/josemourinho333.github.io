@@ -18,7 +18,7 @@ const NewHome = () => {
         <Nav />
         <NewIntro />
       </div>
-      <div className="basis-[50%]">
+      <div id="carousel-section" className="basis-[50%] bg-neutral text-white flex flex-col">
         <Carousel />
       </div>
     </div>

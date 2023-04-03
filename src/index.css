@@ -16,4 +16,9 @@ body {
   scroll-behavior: smooth;
 }
 
+#carousel-section {
+  clip-path: ellipse(100% 100% at 50% 100%);
+  width: 100%;
+}
+
 
