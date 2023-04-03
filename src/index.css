@@ -17,8 +17,7 @@ body {
 }
 
 #carousel-section {
-  clip-path: ellipse(100% 100% at 50% 100%);
-  width: 100%;
+  clip-path: ellipse(135% 100% at 50% 100%);
 }
 
 
