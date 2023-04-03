@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Carousel from './Carousel';
-import NewIntro from './NewIntro';
+import NewIntro from './NewIntro.jsx';
 
 const NewHome = () => {
   return (
@@ -18,7 +18,7 @@ const NewHome = () => {
         <Nav />
         <NewIntro />
       </div>
-      <div id="carousel-section" className="basis-[50%] bg-neutral text-white flex flex-col">
+      <div id="carousel-section" className="basis-[50%] px-6 md:px-40 lg:px-40 xl:px-40 xxl:px-40 bg-neutral text-white flex flex-col justify-center items-center">
         <Carousel />
       </div>
     </div>
