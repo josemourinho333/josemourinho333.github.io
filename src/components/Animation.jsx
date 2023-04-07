@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import $ from 'jquery';
+import DroppingFromSvg from './DroppingFromSvg';
 
 const Animation = () => {
   var mainCircle, smallCircle, width, height, otherRadius, sideCircle1, sideCircle2, speed;
@@ -73,18 +74,18 @@ const Animation = () => {
     var ctxt = canvas.getContext('2d');
     ctxt.translate(0.5, 0.5); // This is some kind of hack to speed up rendering a very small bit
     var x = canvas.width / 2,
-      radius = Math.min(canvas.height / 3, canvas.width / 3),
-      smallRadius = radius / 8;
+      radius = Math.min(canvas.height / 6, canvas.width / 6),
+      smallRadius = radius / 6;
 
     // mainCircle and smallCircle are our two circles
     // sideCircle1 and sideCircle2 are used for effect
     // otherRadius affects the length that the drip
     // stays attached
-    mainCircle = { 'x': x, 'y': 0, 'radius': radius, 'fill': "#000" };
-    smallCircle = { 'x': x, 'y': radius - smallRadius + 1, 'radius': smallRadius, 'fill': "#000" };
+    mainCircle = { 'x': x, 'y': 0, 'radius': radius, 'fill': "#fff" };
+    smallCircle = { 'x': x, 'y': radius - smallRadius + 1, 'radius': smallRadius, 'fill': "#fff" };
     otherRadius = radius / 5;
-    sideCircle1 = { 'x': 0, 'y': 0, 'radius': otherRadius, 'fill': "#fff" };
-    sideCircle2 = { 'x': otherRadius * 5, 'y': 0, 'radius': otherRadius, 'fill': "#fff" };
+    sideCircle1 = { 'x': 0, 'y': 0, 'radius': otherRadius, 'fill': "#5eead4" };
+    sideCircle2 = { 'x': otherRadius * 5, 'y': 0, 'radius': otherRadius, 'fill': "#5eead4" };
     speed = radius / 50;
 
     updateSideCircles();
@@ -184,7 +185,7 @@ const Animation = () => {
 
   // fills a polygon
   var fillPolygon = function (ctxt, pts) {
-    ctxt.fillStyle = "#000";
+    ctxt.fillStyle = "#fff";
     ctxt.beginPath();
     var i = 1,
       length = pts.length,
@@ -255,7 +256,10 @@ const Animation = () => {
 
   return (
     <div className="basis-1/2 flex justify-center items-center relative">
-      <div className="absolute h-screen top-0" id="append-here">
+      <div className="z-10">
+        <DroppingFromSvg height={"250px"} width={"400px"} />
+      </div>
+      <div className="absolute h-[300px] top-24 left-20" id="append-here">
       </div>
     </div>
   )
