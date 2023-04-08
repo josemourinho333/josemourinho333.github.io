@@ -33,7 +33,7 @@ const NewHome = () => {
       className="min-h-screen md:h-screen text-black flex flex-col bg-teal-300"
       style={{
         "backgroundImage": "url(https://merch.deno.com/raindrops-animate.svg)",
-        "backgroundSize": "100% 60vh",
+        "backgroundSize": "cover",
         "backgroundRepeat": "no-repeat"
       }}
     >

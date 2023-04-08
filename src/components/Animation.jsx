@@ -251,7 +251,7 @@ const Animation = () => {
 
   useEffect(() => {
     $(onload);
-    $(window).resize(setupCircles);
+    $(window).on("resize", setupCircles);
   }, [])
 
 
