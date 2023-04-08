@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from '../components/Nav';
 import Carousel from './Carousel';
 import NewIntro from './NewIntro.jsx';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Animation from './Animation.jsx';
+import { getAllProjects } from '../api';
 
 const NewHome = () => {
+  const [projects, setProjects] = useState(null);
+
+  useEffect(() => {
+    getAllProjects
+      .then((res) => {
+        setProjects(res);
+      })
+      .catch((err) => console.log('err', err))
+  }, [])
+
   return (
     <div
       className="h-screen text-black flex flex-col bg-teal-300"
@@ -26,7 +37,7 @@ const NewHome = () => {
           <p className="font-bold text-2xl">Projects</p>
           <a href="https://github.com/josemourinho333" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">See more <HiArrowNarrowRight className="w-5 h-5" /></a>
         </div>
-        <Carousel />
+        <Carousel projects={projects} />
       </div>
     </div>
   )
