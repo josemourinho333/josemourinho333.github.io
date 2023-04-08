@@ -16,6 +16,10 @@ export default function DroppingFromSvg({ height, width }) {
 
 			</g>
 
+			<g
+				fill="#fff" stroke="none">
+			</g>
+
 		</svg>
 	)
 }

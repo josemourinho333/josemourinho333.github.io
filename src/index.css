@@ -22,7 +22,7 @@ body {
 
 #carousel-card {
   background-color: #000;
-  border: 1px solid #3f3f3f;
+  /* border: 1px solid #3f3f3f; */
   flex-basis: 20%;
 }
 

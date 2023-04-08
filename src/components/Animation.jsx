@@ -75,7 +75,7 @@ const Animation = () => {
     ctxt.translate(0.5, 0.5); // This is some kind of hack to speed up rendering a very small bit
     var x = canvas.width / 2,
       radius = Math.min(canvas.height / 6, canvas.width / 6),
-      smallRadius = radius / 6;
+      smallRadius = radius / 8;
 
     // mainCircle and smallCircle are our two circles
     // sideCircle1 and sideCircle2 are used for effect
@@ -86,7 +86,7 @@ const Animation = () => {
     otherRadius = radius / 5;
     sideCircle1 = { 'x': 0, 'y': 0, 'radius': otherRadius, 'fill': "#5eead4" };
     sideCircle2 = { 'x': otherRadius * 5, 'y': 0, 'radius': otherRadius, 'fill': "#5eead4" };
-    speed = radius / 50;
+    speed = radius / 200;
 
     updateSideCircles();
     draw(ctxt);
@@ -96,6 +96,7 @@ const Animation = () => {
   var update = function () {
     var canvas = document.getElementById("canvas");
     var ctxt = canvas.getContext('2d');
+    var radius = Math.min(canvas.height / 6, canvas.width / 6);
 
     // The idea here is that the drip falls faster
     // when the connection is thinner
@@ -118,7 +119,7 @@ const Animation = () => {
     // If the drip is off the screen, restart
     if (smallCircle.y - smallCircle.radius > height) {
       smallCircle.y = mainCircle.radius - smallCircle.radius + 1;
-      speed = mainCircle.radius / 38;
+      speed = radius / 200;
     }
 
     updateSideCircles();
