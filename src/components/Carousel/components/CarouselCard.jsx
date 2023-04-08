@@ -7,7 +7,7 @@ const CarouselCard = ({ name, desc, repo, demo }) => {
   return (
     <div
       id="carousel-card"
-      className="group rounded-lg ease-in-out duration-300 flex flex-col"
+      className="group rounded-lg ease-in-out duration-300 flex flex-col basis-[20%] bg-black"
     >
       <div className="flex-grow flex flex-col pt-4 gap-2 h-full justify-between">
         <div className="px-4 flex flex-col gap-2 h-full justify-evenly">

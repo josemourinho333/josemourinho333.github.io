@@ -256,11 +256,11 @@ const Animation = () => {
 
 
   return (
-    <div className="basis-1/2 flex justify-center items-center relative">
-      <div className="z-10">
-        <DroppingFromSvg height={"250px"} width={"400px"} />
+    <div className="basis-1/2 flex justify-center items-center relative pointer-events-none">
+      <div className="z-10 flex justify-center items-center">
+        <DroppingFromSvg />
       </div>
-      <div className="absolute h-[300px] top-24 left-20" id="append-here">
+      <div className="absolute h-[300px] top-10 md:top-20 left-34" id="append-here">
       </div>
     </div>
   )
