@@ -3,7 +3,7 @@ import React from 'react'
 export default function DroppingFromSvg({ height, width }) {
 	return (
 		<svg version="1.1" id="svg" x="0px" y="0px" width={width}
-			height={height} viewBox="0 0 500 374.549" enable-background="new 0 0 500 374.549" >
+			height={height} viewBox="0 0 500 374.549" enableBackground="new 0 0 500 374.549" >
 
 			<g id="clouds-back">
 				<g>

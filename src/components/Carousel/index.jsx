@@ -3,7 +3,7 @@ import CarouselCard from "./components/CarouselCard.jsx";
 
 const Carousel = ({ projects }) => {
 
-  const listProjects = projects.map((project, index) => {
+  const listProjects = projects?.map((project, index) => {
     return (
       <CarouselCard
         key={index}
