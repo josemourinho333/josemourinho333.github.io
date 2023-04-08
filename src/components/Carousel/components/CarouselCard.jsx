@@ -30,7 +30,6 @@ const CarouselCard = ({ name, desc, repo, demo }) => {
           </a>
         </button>
       </div>
-
     </div>
   )
 }

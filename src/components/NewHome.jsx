@@ -5,16 +5,31 @@ import NewIntro from './NewIntro.jsx';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Animation from './Animation.jsx';
 import { getAllProjects } from '../api';
+import Footer from './Footer';
 
 const NewHome = () => {
   const [projects, setProjects] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getAllProjects
-      .then((res) => {
-        setProjects(res);
-      })
-      .catch((err) => console.log('err', err))
+    if (loading) {
+      setTimeout(() => {
+        getAllProjects
+          .then((res) => {
+            setProjects(res);
+            setLoading(false);
+            setError(null);
+          })
+          .catch((err) => {
+            console.log('err', err);
+            setLoading(false);
+            setError(err);
+          })
+      }, 3000)
+    }
+
+
   }, [])
 
   return (
@@ -37,8 +52,9 @@ const NewHome = () => {
           <p className="font-bold text-2xl">Projects</p>
           <a href="https://github.com/josemourinho333" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">See more <HiArrowNarrowRight className="w-5 h-5" /></a>
         </div>
-        <Carousel projects={projects} />
+        <Carousel projects={projects} error={error} loading={loading} />
       </div>
+      <Footer />
     </div>
   )
 }

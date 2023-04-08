@@ -1,7 +1,9 @@
 import React from "react";
 import CarouselCard from "./components/CarouselCard.jsx";
+import LoadingCarouselCard from "./components/LoadingCarouselCard.jsx";
+import Error from "./components/Error.jsx";
 
-const Carousel = ({ projects }) => {
+const Carousel = ({ projects, loading, error }) => {
 
   const listProjects = projects?.map((project, index) => {
     return (
@@ -14,6 +16,26 @@ const Carousel = ({ projects }) => {
       />
     )
   });
+
+  if (loading) {
+    return (
+      <div className="h-1/2 w-full flex gap-4 justify-between">
+        {/* definitely a lazy way to go about this */}
+        <LoadingCarouselCard />
+        <LoadingCarouselCard />
+        <LoadingCarouselCard />
+        <LoadingCarouselCard />
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="h-1/2 w-full flex gap-4 justify-center items-center">
+        <Error />
+      </div>
+    )
+  }
 
   return (
     <div className="h-1/2 w-full flex gap-4 justify-between">

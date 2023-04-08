@@ -15,4 +15,3 @@ export const getAllProjects = client
     const projectsRef = response.data;
     return projectsRef;
   })
-  .catch((err) => console.log("err", err));
