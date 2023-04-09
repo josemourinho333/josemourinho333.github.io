@@ -19,7 +19,7 @@ const Carousel = ({ projects, loading, error }) => {
 
   if (loading) {
     return (
-      <div className="h-1/2 w-full flex flex-col md:flex-row gap-4 justify-between">
+      <div className="w-full flex flex-col md:flex-row gap-4 justify-between">
         {/* definitely a lazy way to go about this */}
         <LoadingCarouselCard />
         <LoadingCarouselCard />
@@ -31,14 +31,14 @@ const Carousel = ({ projects, loading, error }) => {
 
   if (error) {
     return (
-      <div className="h-1/2 w-full flex flex-col md:flex-row gap-4 justify-center items-center">
+      <div className="w-full flex flex-col md:flex-row gap-4 justify-center items-center">
         <Error />
       </div>
     )
   }
 
   return (
-    <div className="h-1/2 w-full flex flex-col md:flex-row gap-4 justify-between">
+    <div className="w-full flex flex-col md:flex-row gap-4 justify-between">
       {listProjects}
     </div>
   )
